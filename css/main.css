@@ -34,7 +34,7 @@
   .navbar .img-container img {
     width: 50%;
   }
-
+/* --- header --- */
   .header   {
     background-color: var(--main-primary-color);
     padding-top: 50px;
@@ -45,7 +45,11 @@
        
   }
   .header-info {
-    justify-content: center;
+    display: flex;
+    margin: 0px 30px;
+    align-items: center;
+    flex-direction: column;
+  flex-wrap: wrap;
   }
   .title-header {
     color: var(--secondary-font-color);
@@ -55,6 +59,11 @@
   .orange {
     color: orangered;
     font-weight: bold;
+  }
+  .header-content {
+    text-align: center;
+    margin: 0px 50px;
+    line-height: 25px;
   }
 
   .img-header {
@@ -77,10 +86,59 @@
     
   }
 
+/* --- SLIDES --- */
+
+.main-projects {
+  margin: 50px 20px;
+   text-align: center;
+   font-size: 2rem;
+}
+  .carousel-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-dot {
+    background-color: black;
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  .carousel-slides  {
+    width: 1oovw;
+    height: 100vh;
+    background-color: rgb(226, 226, 226);
+    color: var(--main-primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+    overflow: hidden;
+      
+  }
+  
+  
+  
+  /*  .carousel-slides {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+      }*/
+
   @media screen and (max-width: 768px) {
     .header {
       display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    }
+    .carousel-slides {
+     width: 100vh;
     }
   }
