@@ -49,7 +49,7 @@
     margin: 0px 30px;
     align-items: center;
     flex-direction: column;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .title-header {
     color: var(--secondary-font-color);
@@ -69,7 +69,8 @@
   .img-header {
     max-width: 100%;
     height: auto;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto
   }
 
   .button-header  {
@@ -93,45 +94,40 @@
    text-align: center;
    font-size: 2rem;
 }
-  .carousel-links {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .carousel-dot {
-    background-color: black;
-    width: 16px;
-    height: 16px;
-    display: block;
-    border-radius: 50%;
-    margin: 5px;
-  }
-  
-  .carousel-slides  {
-    width: 1oovw;
-    height: 100vh;
-    background-color: rgb(226, 226, 226);
-    color: var(--main-primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    flex-direction: column;
-    overflow: hidden;
-      
-  }
-  
-  
-  
-  /*  .carousel-slides {
-    width: 100vw;
-    height: auto;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-      }*/
 
+  
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+      
+      div#slider { overflow: hidden;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto; }
+      div#slider figure img { width: 20%; float: left; }
+      div#slider figure { 
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: center;
+        font-size: 0;
+        animation: 15s slidy infinite; 
+      }
+    
+
+  
+  
+
+     
   @media screen and (max-width: 768px) {
     .header {
       display: flex;
