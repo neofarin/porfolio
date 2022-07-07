@@ -30,6 +30,7 @@
     font-size: 1.5rem;
     text-decoration: none;
     min-height: 12px;
+    margin-right: 70px;
   }
   
   .navbar .img-container img {
@@ -51,6 +52,7 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .title-header {
     color: var(--secondary-font-color);
@@ -83,9 +85,17 @@
     border-radius: 5px;
     border-color:rgba(255, 255, 255, 0.027);
     max-width: 100%;
-    min-width:50%;
+    min-width:25%;
     padding: 10px 0px;
+    text-align: center;
+    transition: background-color .5s linear;
+        
     
+  }
+
+  .button-header:hover {
+    background-color: rgb(190, 79, 5);
+        
   }
 
 /* --- SLIDES --- */
@@ -110,7 +120,7 @@
     }
       
       div#slider { overflow: hidden;
-        width: 75%;
+        width: 55%;
         margin-left: auto;
         margin-right: auto; }
       div#slider figure img { width: 20%; float: left; }
@@ -130,8 +140,82 @@
       z-index: 1;
     }
 
+    .divisor-linea {
+      padding-bottom: 20px;
+      
+    }
+  .section2 {
+    background-color: #f1f1f1;
+    padding-bottom: 80px;
+  }
   
-     
+  form{
+    width:00px;
+    padding:50px;
+    border-radius:10px;
+    margin:auto;
+    background-color:rgba(204, 204, 204, 0.226);
+    min-width: 350px;
+    max-width: fit-content;
+  }
+  
+  form label{
+    width:100px;
+    font-weight:bold;
+    display:inline-block;
+
+  }
+
+  form legend {
+    font-weight:bold;
+    margin-bottom: 10px;
+        
+  }
+  
+  .radio-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+  }
+  form input[type="text"],
+  form input[type="email"]{
+    width:180px;
+    padding:3px 10px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;
+    margin:8px 0;
+    display:inline-block;
+  }
+  
+  form input[type="submit"]{
+    width:100%;
+    padding:8px 16px;
+    margin-top:32px;
+    border:1px solid orangered;
+    border-radius:5px;
+    display:block;
+    color:#fff;
+    background-color:orangered;
+  } 
+  
+  form input[type="submit"]:hover{
+    cursor:pointer;
+  }
+  
+  textarea{
+    width:100%;
+    height:100px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;			
+    margin:8px 0;
+    /*resize: vertical | horizontal | none | both*/
+    resize:none;
+    display:block;
+  }
   @media screen and (max-width: 768px) {
     .header {
       display: flex;
@@ -141,4 +225,5 @@
     .carousel-slides {
      width: 100vh;
     }
+    
   }
