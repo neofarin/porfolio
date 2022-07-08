@@ -1,0 +1,60 @@
+:root {
+  --main-primary-color:  #24292f;
+  --secondary-font-color: #fff;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-bg {
+  background-color: var(--main-primary-color);
+  color: var(--secondary-font-color);
+}
+
+/* --- navbar --- */
+.navbar {
+  padding: 5px 10px; 
+  /* position: fixed; */
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 25px;
+  margin-bottom: -25px;
+}
+.portfolio-title {
+  color: var(--secondary-font-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+  min-height: 12px;
+  margin-right: 70px;
+}
+
+.navbar .img-container img {
+  width: 50%;
+}
+
+
+.footer {
+padding: 30px 50px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.footer img {
+height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
+  
+}
