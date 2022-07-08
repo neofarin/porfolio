@@ -89,18 +89,38 @@
     padding: 10px 0px;
     text-align: center;
     transition: background-color .5s linear;
+    text-decoration: none;
+
         
-    
-  }
+   }
+
 
   .button-header:hover {
     background-color: rgb(190, 79, 5);
         
   }
 
-/* --- SLIDES --- */
+  .button-portfolio  {
+    background-color: orangered;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: var(--secondary-font-color);
+    font-size: 1,5rem;
+    border-radius: 5px;
+    border-color:rgba(255, 255, 255, 0.027);
+    min-width:25%;
+    padding: 10px 0px;
+    text-align: center;
+    transition: background-color .5s linear;
+    align-self: center;
+    text-decoration: none;
+  }
 
-.main-projects {
+  .button-portfolio:hover {
+    background-color: rgb(190, 79, 5);
+/* --- SLIDES --- */
+  }
+.titulos1 {
   margin: 50px 20px;
    text-align: center;
    font-size: 2rem;
@@ -149,6 +169,92 @@
     padding-bottom: 80px;
   }
   
+  .contenedor {
+    display: grid;
+    grid-template-columns:  45% 55%;
+    
+    grid-template-areas: repeat (2, fr1);
+    margin-bottom: 100px;
+  }
+
+  .about {
+    margin-left: 100px;
+    margin-right: 40px;
+    font-size: 1rem;
+    line-height: 25px;
+    
+  }
+
+  
+
+  .container {
+    width: 95%;
+    background-color: rgb(236, 237, 238);
+    border-radius: 10px;
+    animation: fill 0.5s 1s linear forwards;
+    transform-origin: left;
+    opacity: 0;
+    margin-left: 50px;
+    max-width: 80%;
+  }
+  
+  .skills {
+    text-align: right;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    animation: fill 0.5s 2s linear forwards;
+    transform-origin: left;
+    padding: 5px 0;
+    
+    
+  }
+  @keyframes fill {
+    0% {
+      opacity: 1;
+      transform: scaleX(0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+  
+  .worpress {
+    width: 90%;
+    background-color: rgb(247, 163, 6);
+  }
+  
+  .elementor {
+    width: 95%;
+    background-color: rgb(247, 163, 6);
+  }
+  
+  .illustrator {
+    width: 75%;
+    background-color: rgb(247, 163, 6);
+  }
+  
+  .seo {
+    width: 80%;
+    background-color: rgb(247, 163, 6);
+  }
+
+  .sc {
+    width: 90%;
+    background-color: rgb(247, 163, 6);
+  }
+  
+  .ga {
+    width: 90%;
+    background-color: rgb(247, 163, 6);
+  }
+  
+  
+  
+ 
   form{
     width:00px;
     padding:50px;
@@ -216,6 +322,19 @@
     resize:none;
     display:block;
   }
+
+.footer {
+  padding: 30px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.footer img {
+  height: 40px;
+}
+
   @media screen and (max-width: 768px) {
     .header {
       display: flex;
@@ -225,5 +344,14 @@
     .carousel-slides {
      width: 100vh;
     }
-    
+
+    .contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+      
+    }
+    .container {
+    margin-left: 90px;
+   }
   }
