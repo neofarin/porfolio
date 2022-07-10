@@ -25,6 +25,14 @@
   min-height: 25px;
   margin-bottom: -25px;
 }
+
+/* .menu {
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 20px;
+} */
+
 .portfolio-title {
   color: var(--secondary-font-color);
   font-size: 1.5rem;
