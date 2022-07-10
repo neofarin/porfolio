@@ -9,3 +9,4 @@ Seguidamente se realizó un carrusel de imágenes para destacar los trabajos pri
 
 A continuación, se preparó una segunda página para ampliar la información relacionada con los trabajos realizados, siguiendo el esquema propuesto.
 
+Para visualizar la página visita el siguiente enlace: https://neofarin.github.io/portfolio/index.html
