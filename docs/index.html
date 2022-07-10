@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav class="navbar main-bg" >
+    <div class="img-container">
+     <img src="media\Panda-Logo-TPW.png" alt="logo-01" >
+    </div>
+        <a class="portfolio-title" href="#"> Rafael J. Martínez García</a>
+</nav>
+<header class="header">
+    <div class="header-info">
+        <h1 class="title-header">Never stop<span class="orange"> learning, </span> because life never stop <span class="orange"> teaching</span>  </h1>
+        <p class="header-content">Soy <strong> Rafael J. Martínez García</strong> , creativo, músico y emprendedor. Especialista en <strong>Marketing Digital y Elementor Expert</strong> </p>
+         <a class="button-header" type="link" href="#contacto"  rel="noopener noreferrer" >Contacto</a>
+    </div>
+    
+    <picture  class="img-header">
+      <source
+        media="(min-width: 768px)"
+        srcset="media\Rafa.png"
+      >
+      <img
+        src="media\Rafa_1.png" alt="Foto-Rafa"
+      >
+    </picture>
+   
+</header>
+
+  
+
+ <Section class="main-slider">
+  <div class="titulos1">
+    <h2> Main Projects</h2>
+  </div>
+  <div id="slider">
+    <figure class="figure">
+      <div id="slide1">
+        <img src="media\11.jpg" alt="Glue Work Web Design">
+      </div>
+      <div id="slide2">
+        <img src="media\12.jpg" alt="Todaysevents Web Design">
+      </div>
+      <div id="slide3">
+        <img src="media\13.jpg" alt="Dr Luis Montel Web Design">
+      </div>
+    </figure>
+  </div>
+
+  <a class="button-portfolio" type="link" href="/portfolio"  rel="noopener noreferrer" >Ver más</a>
+
+</Section>
+
+
+<main>
+  <div class="titulos1">
+    <hr><h2> About me</h2><hr>
+  </div>
+
+  <div class="contenedor">
+    <div class="about">
+      <h3 class="titulos1">Un poco sobre mí</h3>
+      <p>Soy apasionado por el Marketing Digital y el desarrollo web. Además, soy músico desde los 13 años y emprendedor por naturaleza. <span></span> 
+      </p>
+      <p>Soy graduado en Administración de empresas y actualmente estoy cursando un Bootcamp en desarrollo web. He realizado múltiples formaciones relacionadas con ml marketing digital.</p>
+    </div>
+     <div class="skills">
+      <h3 class="titulos1">Skills</h3>
+        <p>Wordpress</p>
+        <div class="container">
+          <div class="skills worpress">90%</div>
+        </div>
+        <p>Elementor</p>
+        <div class="container">
+          <div class="skills elementor">95%</div>
+        </div>
+        <p>Illustrator</p>
+        <div class="container">
+          <div class="skills illustrator">75%</div>
+        </div>
+        <p>SEO</p>
+        <div class="container">
+          <div class="skills seo">80%</div>
+        </div>
+        <p>Search console</p>
+        <div class="container">
+          <div class="skills sc">90%</div>
+        </div>
+        <p>Google Analytics</p>
+        <div class="container">
+          <div class="skills ga">90%</div>
+        </div>
+
+      
+    </div>  
+  </div>
+</main>
+  <section class="section2" id="contacto">
+    <hr class="divisor-linea">
+    <div class="titulos1">
+      <h2> Contacto</h2>
+    </div>
+    <form action="#" target="" action="/register" validate method="post" name="formDatosPersonales">
+      
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+  
+    <label for="apellidos">Apellidos</label>
+    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+  
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="email" required >
+  
+    <label for="tel">Teléfono</label>
+    <input type ="text" name="tel" id="text"  placeholder="Tu Nº de Teléfono" >
+
+    <fieldset>
+      <legend>¿Cómo me conociste?</legend>
+        <div class="radio-form">
+          <label>Universidad</label>
+          <input type="radio" name="fav" id="js" value="js" checked>
+          <label>Keepcoding Kick-off </label>
+          <input type="radio" name="fav" id="python" value="python">
+          <label>Colegio</label>
+          <input type="radio" name="fav" id="net" value="net">
+          <label>En GitHub</label>
+          <input type="radio" name="fav" id="net" value="net">
+        </div>
+    </fieldset>
+
+    <label for="git">Githbub User</label>
+    <input type ="text" name="gituser" id="text"  placeholder="Tu usuario Github @" pattern="[@]" required >
+  
+    <label for="mensaje">Descripción</label>
+    <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 180 carácteres" maxlength="180"></textarea>
+    
+    <input type="submit" name="enviar" value="Enviar">
+  </form>
+  <hr class="divisor-linea">
+</section>
+<footer class="main-bg footer">
+  
+  <div>
+    <a href="https://www.instagram.com/neofarin/?hl=es" rel="noopener noreferrer" target="_blank"><img src="media\icon-_ig.png" alt="instagram rafa" >
+  </div>
+  <div>
+    <a href="https://www.linkedin.com/in/rafaelmartinezg/" rel="noopener noreferrer" target="_blank"><img src="media\icon-_ln.png" alt="linkedin rafa" >
+  </div>
+  <div>
+    <a href="https://api.whatsapp.com/send?phone=34629438415&text=Hola,%20he%20visto%20tu%20portfolio%20en%20html%20y%20css" rel="noopener noreferrer" target="_blank"><img src="media\icon-_wp.png" alt="whatsapprafa" >
+  </div>
+
+</footer>
+</body>
+</html>
